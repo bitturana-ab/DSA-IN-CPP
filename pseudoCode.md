@@ -63,3 +63,71 @@
 3. else
     print "not a valid trinagle"
 ```
+
+# Using loops
+
+## Sum of 1 to N
+
+```c
+1. input: N
+2. sum = 0, num = 1;
+3. if(num < N)
+    sum = sum + num ;
+    num = num + 1;
+4. return to 3 line
+5. else
+    print: sum
+```
+
+## Sum of 1 to N (inclusive)
+
+```c
+1. input: N
+2. sum = 0, num = 1;
+3. if(num <= N)
+    sum = sum + num ;
+    num = num + 1;
+4. return to 3 line
+5. else
+    print: sum
+```
+
+## Print 1 to N even number
+
+```c
+1. input: N
+2. num = 2 ; // for even
+3. if(num < N)
+    print: num;
+    num += 2;
+4. return to 3 line
+```
+
+## Factorial of N
+
+```c
+1. input: N
+2. fact = 1, num = 1;
+3. if(num < N)
+    fact = fact + num ;
+    num++ ;
+4. return to 3 line
+5. else
+    print: fact
+```
+
+## Given number is prime or not
+
+```c
+1. input: n
+2. num = 2;
+3. if(num < N)
+    if(N % num == 0){
+        print: Not a prime
+    }
+4.  else
+        num = num +1 ;
+
+5. return to 3 line
+6. print: prime
+```
