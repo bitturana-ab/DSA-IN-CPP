@@ -264,7 +264,7 @@ int main()
         cout << endl;
         row++;
     }
-    */
+
 
     // A B C
     // A B C
@@ -285,4 +285,121 @@ int main()
         cout << endl;
         row++;
     }
+
+
+    // A B C
+    // D E F
+    // G H I
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    char ch = 'A';
+    int row = 1;
+    while (row <= n)
+    {
+        int col = 1;
+        while (col <= n)
+        {
+            cout << ch << " ";
+            col++;
+            ch++;
+        }
+        cout << endl;
+        row++;
+    }
+
+
+    // A B C
+    // B C E
+    // C D E
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int col = 1;
+        char ch = 'A' + row - 1;
+        // char ch = 'A' + row + col - 2;
+        while (col <= n)
+        {
+            cout << ch << " ";
+            ch++;
+            col++;
+        }
+        cout << endl;
+        row++;
+    }
+
+
+    // A
+    // B B
+    // C C C
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int col = 1;
+        while (col <= row)
+        {
+            char ch = 'A' + row - 1; // ASCII value of A is 65
+            cout << ch << " ";
+            col++;
+        }
+        cout << endl;
+        row++;
+    }
+
+    // A
+    // B C
+    // D E F
+    // G H I J
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    char ch = 'A' + row - 1; // ASCII value of A is 65
+    while (row <= n)
+    {
+        int col = 1;
+        while (col <= row)
+        {
+
+            cout << ch << " ";
+            col++;
+            ch++;
+        }
+        cout << endl;
+        row++;
+    }
+
+
+    // A
+    // B C
+    // C D E
+    // D E F G
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int col = 1;
+        char ch = 'A' + row - 1;
+        while (col <= row)
+        {
+            cout << ch << " ";
+            col++;
+            ch++;
+        }
+        cout << endl;
+        row++;
+    }
+    */
 }
