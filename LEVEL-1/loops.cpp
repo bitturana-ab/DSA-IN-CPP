@@ -2,6 +2,9 @@
 using namespace std;
 int main()
 {
+    // before run this program comments all block except one
+
+    /*
     int n;
     cout << "Enter a number: ";
     cin >> n;
@@ -71,33 +74,215 @@ int main()
     int n1;
     cout << "Enter number of levels: ";
     cin >> n1;
-    int i2 = 1;
-    while (i2 <= n1)
+    int row = 1;
+    while (row <= n1)
     {
         int j = 1;
         while (j <= n1)
         {
-            cout << i2 << " ";
+            cout << row << " ";
             j++;
         }
         cout << endl;
-        i2++;
+        row++;
     }
 
     // pattern for 1 2 3 4 .. n printing in each row
-    int row1;
+    int n;
     cout << "Enter number of rows: ";
-    cin >> row1;
-    int count1 = 1;
-    while (count1 <= row1)
+    cin >> n;
+    int row = 1;
+    while (row <= n)
     {
         int j = 1;
-        while (j <= row1)
+        while (j <= n)
         {
             cout << j << " ";
             j++;
         }
         cout << endl;
-        count1++;
+        row++;
+    }
+
+    // pattern for n... 3,2,1 printing in each row
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int col = 1;
+        while (col <= n)
+        {
+            cout << n - col + 1 << " ";
+            col++;
+        }
+        cout << endl;
+        row++;
+    }
+
+    // 1,2,3,4
+    // 5,6,7,8
+    // 9,10,11,12
+    // 13,14,15,16
+
+    int num2;
+    cout << "Enter a number: ";
+    cin >> num2;
+    int row = 1;
+    int count3 = 1;
+    while (row <= num2)
+    {
+        int col = 1;
+        while (col <= num2)
+        {
+            cout << count3 << " ";
+            col++;
+            count3++;
+        }
+        cout << endl;
+        row++;
+    }
+
+    // triangle pattern printing
+    int triangle;
+    cout << "Enter number of trianle rows: ";
+    cin >> triangle;
+    int row = 1;
+    while (row <= triangle)
+    {
+        int col = 1;
+        while (col <= row)
+        {
+            cout << "* ";
+            col++;
+        }
+        cout << endl;
+        row++;
+    }
+
+    // 1,22,333,4444,55555 printing pattern
+    int n3;
+    cout << "Enter number of rows: ";
+    cin >> n3;
+    int i5 = 1;
+    while (i5 <= n3)
+    {
+        int col = 1;
+        while (col <= i5)
+        {
+            cout << i5 << " ";
+            col++;
+        }
+        cout << endl;
+        row
+    }
+
+    // 1
+    // 2,3
+    // 4,5,6
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int i = 1;
+    int count = 1;
+    while (i <= n)
+    {
+        int j = 1;
+        while (j <= i)
+        {
+            cout << count << " ";
+            j++;
+            count++;
+        }
+        cout << endl;
+        i++;
+    }
+
+    // 1
+    // 2 3
+    // 3 4 5
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int col = 1;
+        int count = row;
+        while (col <= row)
+        {
+            cout << count << " ";
+            count++;
+            col++;
+        }
+        cout << endl;
+        row++;
+    }
+
+    // 1
+    // 2 1
+    // 3 2 1
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int col = row;
+        while (col >= 1)
+        {
+            cout << col << " ";
+            col--;
+        }
+        cout << endl;
+        row++;
+    }
+
+
+    // A A A
+    // B B B
+    // C C C
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int col = 1;
+        while (col <= n)
+        {
+            char ch = 'A' + row - 1; // ASCII value of A is 65
+            cout << ch << " ";
+            // cout << char(row + 64) << " ";
+            // cout << 'A' + row - 1 << " ";
+            col++;
+        }
+        cout << endl;
+        row++;
+    }
+    */
+
+    // A B C
+    // A B C
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int col = 1;
+        while (col <= n)
+        {
+            char ch = 'A' + col - 1; // ASCII value of A is 65
+            cout << ch << " ";
+            col++;
+        }
+        cout << endl;
+        row++;
     }
 }
