@@ -392,6 +392,7 @@ int main()
     {
         int col = 1;
         char ch = 'A' + row - 1;
+        char ch = 'A' + row + col - 2;
         while (col <= row)
         {
             cout << ch << " ";
@@ -401,5 +402,251 @@ int main()
         cout << endl;
         row++;
     }
+
+
+    // D
+    // C D
+    // B C D
+    // A B C D
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int col = 1;
+        char ch = 'A' + n - row;
+
+        while (col <= row)
+        {
+            cout << ch << " ";
+            ch++;
+            col++;
+        }
+        cout << endl;
+        row++;
+    }
+
+    // A B C
+    // B C D
+    // C D E
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int col = 1;
+        char ch = 'A' + row - 1;
+        while (col <= n)
+        {
+            cout << ch << " ";
+            ch++;
+            col++;
+        }
+        cout << endl;
+        row++;
+    }
+
+
+    //    *
+    //   **
+    //  ***
+    // ****
+
+    int n;
+    cout << "Enter number of row: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int col = 1;
+        int space = n - row;
+        // space print
+        while (space >= 1)
+        {
+            cout << " " << " ";
+            space--;
+        }
+        // star print
+        while (col <= row)
+        {
+            cout << "*" << " ";
+            col++;
+        }
+        cout << endl;
+        row++;
+    }
+
+    // ****
+    // ***
+    // **
+    // *
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int star = n - row + 1;
+        while (star >= 1)
+        {
+            cout << "*" << " ";
+            star--;
+        }
+        int col = 1;
+        while (col <= row)
+        {
+            cout << " " << " ";
+            col++;
+        }
+        cout << endl;
+        row++;
+    }
+
+
+    // ****
+    //  ***
+    //   **
+    //    *
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int space = row - 1;
+        while (space >= 1)
+        {
+            cout << " " << " ";
+            space--;
+        }
+        int star = n - row + 1;
+        while (star >= 1)
+        {
+            cout << "*" << " ";
+            star--;
+        }
+        cout << endl;
+        row++;
+    }
+
+
+    // 1111
+    //  222
+    //   33
+    //    4
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int space = row - 1;
+        while (space >= 1)
+        {
+            cout << " " << " ";
+            space--;
+        }
+        int num = n - row + 1;
+        while (num >= 1)
+        {
+            cout << row << " ";
+            num--;
+        }
+
+        cout << endl;
+        row++;
+    }
+
+
+    //    1
+    //   121
+    //  12321
+    // 1234321
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        int space = n - row;
+        // while(space>=1) == while(space)
+        while (space)
+        {
+            cout << " " << " ";
+            space--;
+        }
+        int num = 1;
+        while (num <= row)
+        {
+            cout << num << " ";
+            num++;
+        }
+        int number = row - 1;
+        // while(number>=1) == while(number)
+        while (number)
+        {
+            cout << number << " ";
+            number--;
+        }
+        cout << endl;
+        row++;
+    }
     */
+
+    // 1234554321
+    // 1234**4321
+    // 123****321
+    // 12******21
+    // 1********1
+
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+    int row = 1;
+    while (row <= n)
+    {
+        // 1st n number print
+
+        int col = n - row + 1;
+        int i = 1;
+        while (col)
+        {
+            cout << i << " ";
+            col--;
+            i++;
+        }
+
+        // 1st star print in between
+        int star = row - 1;
+        while (star)
+        {
+            cout << " " << " ";
+            star--;
+        }
+        // 2nd star print
+        star = row - 1;
+        while (star)
+        {
+            cout << " " << " ";
+            star--;
+        }
+        // 2nd (n-1) number print
+
+        col = n - row + 1;
+        while (col)
+        {
+            cout << col << " ";
+            col--;
+        }
+
+        cout << endl;
+        row++;
+    }
 }
