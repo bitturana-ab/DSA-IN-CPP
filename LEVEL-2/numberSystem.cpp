@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    // binary to decimal
+    // binary to decimal && decimal to binary
     // 1,2,3 => 321
     // ans = 0 , i =0 ;
     // reverse formula for digits => [ans = (digit * 10^i) + ans]
